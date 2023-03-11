@@ -1,0 +1,130 @@
+@media (max-width:1190px) {
+    .home .top-banner .text p {
+        width: 50%;
+    }
+    .list_resto_thumb {
+        width: 100%;
+        max-height: 190px !important;
+    }
+}
+
+@media (max-width:1000px) {
+    .home .top-banner .text h1 {
+        font-size: 2rem;
+    }
+    .list_resto_thumb {
+        width: 100%;
+        max-height: 170px !important;
+    }
+}
+
+
+@media (max-width:900px) {
+    nav .navbar {
+        width: 90%;
+    }
+    nav .navbar .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background-color: var(--white-color);
+        height: 100vh;
+        max-width: 25rem;
+        width: 100%;
+        padding-top: 3.75rem;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+    nav .menu-btn,
+    nav .menu .cancel-btn {
+        display: block;
+        color: var(--black-color);
+    }
+    nav .menu-btn {
+        color: var(--white-color);
+    }
+    nav .menu-btn.active {
+        color: var(--black-color);
+    }
+    .navbar.active .menu {
+        left: 0;
+    }
+    nav .navbar .menu li a {
+        font-size: 1.4375rem;
+        color: var(--black-color);
+        display: block;
+        margin: 0.625rem 0;
+        cursor: pointer;
+    }
+    .home .top-banner .text p {
+        width: 70%;
+    }
+    .content-title p {
+        width: 80%;
+    }
+    .list_resto_thumb {
+        width: 100%;
+        max-height: 140px !important;
+    }
+    .desc-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+    }
+    .menu-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+    }
+    .footer-widget .footer-content {
+        width: calc(100% / 2 - 1.25rem);
+        margin-bottom: 1.5rem;
+    }
+    .footer-design .footer-widget {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:750px) { 
+
+    .home .top-banner {
+        width: 100%;
+    }
+    .home .top-banner .text h1 {
+        font-size: 2rem;
+    }
+    .home .top-banner .text p {
+        width: 90%;
+    }
+    .list {
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+    }
+    .list_resto_thumb {
+        width: 100%;
+        max-height: 250px !important;
+    }
+}
+
+@media (max-width:350px) {
+    .home .top-banner .text h1 {
+        font-size: 1.5rem;
+    }
+    .list {
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+    }
+    .list_resto_thumb {
+        width: 100%;
+        max-height: 180px !important;
+    }
+}
