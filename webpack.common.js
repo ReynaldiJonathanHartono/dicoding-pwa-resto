@@ -96,7 +96,10 @@ module.exports = {
       overrideExtension: true,
     }),
     new CleanWebpackPlugin(),
-    new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin(
+      analyzerMode: 'static',
+      openAnalyzer: false,
+    ),
     new WorkboxWebpackPlugin.GenerateSW({
       swDest: './sw.bundle.js',
     }),
